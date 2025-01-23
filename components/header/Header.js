@@ -5,6 +5,7 @@ import Link from 'next/link';
 import classes from './Header.module.css';
 import Image from 'next/image';
 import HeaderBackground from './HeaderBackground';
+import NavLink from './NavLink/NavLink';
 
 const Header = () => {
   return (
@@ -18,8 +19,12 @@ const Header = () => {
             </Link>
             <nav className={classes.nav}>
                 <ul>
-                    <li> <Link href={'/meals'}>Browse Meals</Link>  </li>
-                    <li><Link href={'/community'}>Foodie Community</Link></li>
+                    <li> 
+                    <NavLink href="/meals">Browse Meals</NavLink>
+                    </li>
+                    <li>
+                    <NavLink href="/community">Foodie Community</NavLink>
+                    </li>
                 </ul>
 
             </nav>
