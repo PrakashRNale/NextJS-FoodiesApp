@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import classes from './page.module.css';
 import Link from 'next/link';
 import MealsGrid from '@/components/meals/MealsGrid';
 import { getMeals } from '@/lib/meals';
+import MealsData from './MealsData';
 
 const Meals = async () => {
-  const mealsData = await getMeals();
-  console.log('meals data '+ mealsData)
+  // const mealsData = await getMeals();
+  // console.log('meals data '+ mealsData)
   return (
    <>
       <header className={classes.header}>
@@ -21,7 +22,9 @@ const Meals = async () => {
         </p>
       </header>
       <main className={classes.main}> 
-        <MealsGrid meals={mealsData} />
+        <Suspense fallback={<p className={classes.loading}>Fetching meals...</p>}>
+          <MealsData />
+        </Suspense>
       </main>
    </>
   )
