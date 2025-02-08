@@ -4,7 +4,7 @@ import { useFormStatus } from 'react-dom'
 
 const FormStatusButton = () => {
   const { pending } = useFormStatus();
-  console.log('status is '+pending)
+  // console.log('status is '+pending)
   return <button disabled={pending}>
         {pending ? 'Submitting...' : 'Share Meal here'}
     </button>

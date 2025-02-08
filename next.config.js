@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['prakashrnale.s3.ap-south-1.amazonaws.com'],
+        domains: [process.env.AWS_S3BUCKET_CONFIG],
         remotePatterns: [
             {
-            protocol: 'https',
-            hostname: 'https://prakashrnale.s3.ap-south-1.amazonaws.com/',
-            port: '',
-            pathname: '/**',
+                protocol: 'https',
+                hostname: process.env.AWS_S3BUCKET_CONFIG,
+                port: '',
+                pathname: '/**',
             },
         ],
     },
