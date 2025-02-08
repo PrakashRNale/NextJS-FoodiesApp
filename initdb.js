@@ -21,8 +21,8 @@ const dummyMeals = [
       4. Serve:
          Complete the assembly with the top bun and serve hot.
     `,
-    creator: 'John Doe',
-    creator_email: 'johndoe@example.com',
+    creator: 'Prakash Nale',
+    creator_email: 'prakash.nale@gmail.com',
   },
   {
     title: 'Spicy Curry',
@@ -46,8 +46,8 @@ const dummyMeals = [
       5. Serve:
          Enjoy this creamy curry with rice or bread.
     `,
-    creator: 'Max Schwarz',
-    creator_email: 'max@example.com',
+    creator: 'Jyoti Nale',
+    creator_email: 'jnale@gmail.com',
   },
   {
     title: 'Homemade Dumplings',
