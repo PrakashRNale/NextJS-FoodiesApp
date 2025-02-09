@@ -12,7 +12,7 @@ const MealItem = ({ title, slug, image, summary, creator }) =>{
           <Image src={`${process.env.AWS_S3BUCKET_URL}${image}`} alt={title} fill />
         </div>
         <div className={classes.headerText}>
-          <h2>{title} Me</h2>
+          <h2>{title}</h2>
           <p>by {creator}</p>
         </div>
       </header>
