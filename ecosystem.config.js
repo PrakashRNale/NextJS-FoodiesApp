@@ -2,7 +2,7 @@ module.exports = {
     apps: [
       {
         name: "nextjs-app",
-        script: "npm",
+        script: "npm start",
         args: "start",
         env: {
           AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
